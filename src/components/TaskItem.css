@@ -7,14 +7,32 @@
     padding: 10px !important;
 }
 
+.task-description {
+    width: 95%;
+    overflow-wrap: break-word;
+}
+
+.done-button {
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #3CCF4E;
+}
+
 .close-button {
     display: inline;
-    font-size: 22px;
+    font-size: 25px;
     cursor: pointer;
     color: #EF5B0C;
 }
 
 
-.close-button:hover {
-    filter: brightness(90%);
+.close-button:hover,
+.done-button:hover {
+    filter: brightness(85%);
+}
+
+.task-done {
+    text-decoration: line-through;
+    color: red;
 }
