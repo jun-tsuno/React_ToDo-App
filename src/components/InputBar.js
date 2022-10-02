@@ -1,18 +1,19 @@
-import React from "react";
 import './InputBar.css';
+import React from "react";
 
 
 class InputBar extends React.Component {
-    state = { text: '' };
+    state = { term: '' };
 
     onInputChange = (event) => {
-        this.setState({ text: event.target.value })
+        this.setState({ term: event.target.value })
     }
 
     onFormSubmit = (event) => {
         event.preventDefault();
-
-        this.props.onFormSubmit(this.state.text);
+        if(this.state.term === '') return;
+        this.props.onFormSubmit(this.state.term);
+        this.setState({ term: '' })
     }
 
     render() {
@@ -23,7 +24,7 @@ class InputBar extends React.Component {
                         <input type="text"
                                 placeholder="Add Task"
                                 onChange={this.onInputChange}
-                                value={this.state.text}
+                                value={this.state.term}
                         />
                     </div>
                     <button className="ui button" type="submit">Add</button>

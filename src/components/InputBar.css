@@ -1,14 +1,19 @@
-.input-area {
-    margin: 10px auto !important;
-    max-width: 600px;
-    min-width: 450px;
-}
-
 form {
     display: flex !important;
     justify-content: space-around;
+
 }
 
 .text-input {
     width: 80%;
 }
+
+button {
+    background-color: #3CCF4E !important;
+    color: white !important;
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
