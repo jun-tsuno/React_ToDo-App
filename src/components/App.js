@@ -22,7 +22,6 @@ class App extends React.Component {
         });
     }
 
-
     render() {
         return (
             <div className='container'>
@@ -32,7 +31,7 @@ class App extends React.Component {
                     <InputBar onFormSubmit={this.onTaskSubmit}/>
                 </div>
                 <div className="task-list">
-                    <TaskList tasks={this.state.tasks} onDelete={this.handleDelete}/>
+                    <TaskList tasks={this.state.tasks} onDelete={this.handleDelete} />
                 </div>
             </div>
         )

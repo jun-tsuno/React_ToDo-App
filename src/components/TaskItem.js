@@ -1,7 +1,7 @@
 import './TaskItem.css';
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmarkSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 
 const TaskItem = (props) => {
@@ -14,10 +14,11 @@ const TaskItem = (props) => {
                     <FontAwesomeIcon icon={faSquareCheck} />
                 </div>
                 <div className="close-button" onClick={() => props.onDelete(props.id)}>
-                    <FontAwesomeIcon icon={faXmarkSquare} />
+                    <FontAwesomeIcon icon={faTrashCan} />
                 </div>
             </div>
         );
 }
+
 
 export default TaskItem;
