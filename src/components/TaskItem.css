@@ -26,13 +26,7 @@
     color: #EF5B0C;
 }
 
-
 .close-button:hover,
 .done-button:hover {
     filter: brightness(85%);
-}
-
-.task-done {
-    text-decoration: line-through;
-    color: red;
 }
